@@ -59,12 +59,12 @@ fun Limonade() {
 
     when (tela){
       var tela by remember { mutableStateOf(1) }
-
+     var espremer { mutableStateOf() }
 
         1->ConteudoApp(
              R.string.limoeiro,
              R.drawable.lemon_tree,
-
+          espremer= ( 2<..< 4 ).random()
              {tela=2})
          2->ConteudoApp(
         R.string.limao,
